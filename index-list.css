@@ -1,0 +1,44 @@
+/* 第一版 Part 02 的文字索引，两个章节共用；横滑入口不应用这些规则。 */
+.index-list{padding:clamp(90px,9vw,140px) var(--gutter);background:var(--night);color:var(--cream)}
+.pubs-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:38px}
+.pubs-title{font:200 clamp(44px,6vw,96px)/1 var(--f-en);letter-spacing:-.02em}
+html[lang="zh-CN"] .pubs-title{font:900 clamp(40px,5.5vw,88px)/1.1 var(--f-zh)}
+.pubs-sub{font:400 12px/1.5 var(--f-mono);color:rgba(244,237,201,.6);text-align:right}
+.index-hint-touch{display:none}
+.row{position:relative;display:grid;grid-template-columns:48px minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr) 28px;align-items:center;gap:18px;padding:26px 0;border-top:1px solid rgba(244,237,201,.17);isolation:isolate;--accent:var(--cream)}
+.row:last-child{border-bottom:1px solid rgba(244,237,201,.17)}
+.row::before{content:"";position:absolute;inset:0 calc(var(--gutter) * -1);background:var(--accent);z-index:-1;transform:scaleY(0);transform-origin:50% 100%;transition:transform .22s ease}
+.row:hover::before,.row:focus-visible::before{transform:scaleY(1)}
+.row:hover,.row:focus-visible{color:var(--night)}
+.row:focus-visible{outline:2px solid var(--butter);outline-offset:4px}
+.row-no{grid-column:1;grid-row:1;font:400 13px/1 var(--f-mono);opacity:.65}
+.row-thumb{display:none}
+.row-t{grid-column:2;grid-row:1;font:900 clamp(23px,2.4vw,38px)/1.2 var(--f-zh);overflow-wrap:anywhere;transition:transform .22s ease}
+html[lang="en"] .row-t{font:500 clamp(23px,2.4vw,38px)/1.15 var(--f-en);letter-spacing:-.01em}
+.row:hover .row-t,.row:focus-visible .row-t{transform:translateX(8px)}
+.row-alt{grid-column:3;grid-row:1;font-size:clamp(13px,1.1vw,17px);line-height:1.4;opacity:.75;overflow-wrap:anywhere}
+.row-tags{grid-column:4;grid-row:1;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px}
+.row-arrow{grid-column:5;grid-row:1;font-size:25px;transition:transform .22s ease}
+.row:hover .row-arrow,.row:focus-visible .row-arrow{transform:rotate(-45deg)}
+.row:hover .chip,.row:focus-visible .chip{border-color:rgba(12,11,10,.4);color:var(--night)}
+.pubs-preview{position:fixed;left:0;top:0;z-index:550;width:max-content;height:clamp(180px,26vh,240px);pointer-events:none;opacity:0;visibility:hidden;transform:scale(.97);transition:opacity .16s ease,transform .16s ease,visibility .16s}
+.pubs-preview.is-visible{opacity:1;visibility:visible;transform:scale(1)}
+.pubs-preview-inner{height:100%;width:max-content;box-shadow:0 18px 38px rgba(0,0,0,.35)}
+.pubs-preview-inner img{display:block;width:auto;height:100%;max-width:none;object-fit:contain}
+@media (max-width:820px),(hover:none){
+  .index-hint-pointer{display:none}.index-hint-touch{display:inline}
+  .pubs-head{align-items:flex-start;flex-direction:column;gap:14px;margin-bottom:26px}
+  .pubs-sub{text-align:left}
+  .row{grid-template-columns:28px 96px minmax(0,1fr) 22px;gap:7px 12px;padding:22px 0}
+  .row-no{grid-column:1;grid-row:1;align-self:start;padding-top:5px}
+  .row-thumb{display:block;grid-column:2;grid-row:1/span 3;align-self:start;width:max-content;height:48px}
+  .row-thumb img{display:block;width:auto;height:100%;max-width:none;object-fit:contain}
+  .row-t{grid-column:3;grid-row:1;font-size:21px}
+  html[lang="en"] .row-t{font-size:21px}
+  .row-alt{grid-column:3;grid-row:2;font-size:12px}
+  .row-alt:empty{display:none}
+  .row-tags{grid-column:3;grid-row:3;justify-content:flex-start}
+  .row .chip{font-size:10px;padding:4px 6px}
+  .row-arrow{grid-column:4;grid-row:1;align-self:start;font-size:22px}
+  .pubs-preview{display:none}
+}

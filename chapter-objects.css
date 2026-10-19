@@ -1,0 +1,30 @@
+/* 章节桌面小物件：复用首页 SVG 与拖拽，虚线、旅行动画和标题保留在上层。 */
+.divider .chapter-object{position:absolute;z-index:1}
+.divider .chapter-object--clip{left:11%;top:15%}
+.divider .chapter-object--pencil{left:34%;top:9%}
+.divider .chapter-object--cup{right:4%;bottom:7%}
+.divider .chapter-object--clip .clip{width:clamp(98px,10.5vw,170px)}
+.divider .chapter-object--pencil .pencil{width:clamp(18px,1.9vw,30px)}
+.divider .chapter-object--cup .cup{width:clamp(112px,13vw,202px)}
+.divider--2 .chapter-object--clip{left:8%;top:18%;transform:rotate(12deg)}
+.divider--2 .chapter-object--pencil{left:38%;top:9%;transform:rotate(-13deg)}
+.divider--2 .chapter-object--cup{right:4%;bottom:5%;transform:rotate(-8deg)}
+/* 整页 SVG 只负责画线，让下层小物件继续收到拖拽事件。 */
+.divider .dash-path,.divider .traveler{pointer-events:none}
+
+@media (max-width:820px){
+  .divider .chapter-object--clip{left:6%;top:18%}
+  .divider .chapter-object--pencil{left:47%;top:16%}
+  .divider .chapter-object--cup{right:5%;bottom:6%}
+  .divider .chapter-object--clip .clip{width:88px}
+  .divider .chapter-object--pencil .pencil{width:17px}
+  .divider .chapter-object--cup .cup{width:94px}
+  .divider--2 .chapter-object--clip{left:7%;top:19%}
+  .divider--2 .chapter-object--pencil{left:56%;top:20%}
+}
+
+@media (max-width:480px){
+  .divider .chapter-object--clip .clip{width:76px}
+  .divider .chapter-object--pencil .pencil{width:15px}
+  .divider .chapter-object--cup .cup{width:82px}
+}

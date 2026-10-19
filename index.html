@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN" data-index-mode="list">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>柯婧然 Jingran Ke — Graphic Design Portfolio</title>
+<meta name="description" content="柯婧然 Jingran Ke 平面设计作品集：出版物设计、版式编排、书籍装帧、物料设计、展陈与网页。">
+<meta name="theme-color" content="#E4E0D9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700;900&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261020-5">
+<link rel="stylesheet" href="chapter-objects.css?v=20261020-5">
+<link rel="stylesheet" href="index-list.css?v=20261020-5">
+</head>
+<body>
+
+<!-- 加载动画：呼应她的项目《加载、下载、过载》 -->
+<div class="loader" aria-hidden="true">
+  <div class="loader-folder">
+    <svg viewBox="0 0 120 90"><path d="M4 14 Q4 6 12 6 H44 L54 16 H108 Q116 16 116 24 V80 Q116 86 110 86 H10 Q4 86 4 80 Z" fill="#A8C8EC"/><path d="M4 30 H116 V80 Q116 86 110 86 H10 Q4 86 4 80 Z" fill="#7FB0E6"/></svg>
+  </div>
+  <div class="loader-word"><span data-i18n="loader.1">加载中</span></div>
+  <div class="loader-bar"><span></span></div>
+  <div class="loader-num">0%</div>
+</div>
+
+<!-- 自定义光标 -->
+<div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"><span class="cursor-label"></span></div></div>
+
+<header class="nav">
+  <a href="#top" class="nav-logo" data-cursor="link" aria-label="Jingran Ke">JK<i>.</i></a>
+  <nav class="nav-links">
+    <a href="#about" data-cursor="link" data-i18n="nav.about">关于</a>
+    <a href="#projects" data-cursor="link" data-i18n="nav.projects">项目</a>
+    <a href="#publication" data-cursor="link" data-i18n="nav.pubs">出版</a>
+    <a href="#contact" data-cursor="link" data-i18n="nav.contact">联系</a>
+  </nav>
+  <button class="lang" type="button" data-cursor="link" aria-label="切换语言 / Switch language">
+    <span class="lang-knob"></span><span class="lang-opt" data-l="zh">中</span><span class="lang-opt" data-l="en">EN</span>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- ============ 首屏：她封面的"桌面"拼贴 ============ -->
+<section class="hero">
+  <div class="hero-panel par" data-depth="6"></div>
+  <div class="hero-word par" data-depth="10">Portfolio</div>
+  <div class="gingham hero-gingham par" data-depth="14"></div>
+
+  <svg class="blob hero-blob par" data-depth="4" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><path fill="#7B5B45"/></svg>
+
+  <svg class="plus-grid hero-plus par" data-depth="18" aria-hidden="true"><defs><pattern id="plus" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M22 14 V30 M14 22 H30" stroke="#3A2A20" stroke-width="2.4"/></pattern></defs><rect width="100%" height="100%" fill="url(#plus)"/></svg>
+
+  <!-- 可拖动的小物件 -->
+  <div class="par sticker-wrap" data-depth="26" style="left:12%;top:4%">
+    <div class="sticker clip" data-cursor="drag">
+      <svg viewBox="0 0 200 170"><path d="M62 78 L44 12 H92 L84 78" fill="none" stroke="#E6CF7E" stroke-width="10" stroke-linejoin="round"/><path d="M138 78 L156 12 H108 L116 78" fill="none" stroke="#E6CF7E" stroke-width="10" stroke-linejoin="round"/><path d="M18 74 H182 L170 160 H30 Z" fill="#EED98C"/><path d="M18 74 H182 L180 92 H20 Z" fill="#D9C273"/></svg>
+    </div>
+  </div>
+  <div class="par sticker-wrap" data-depth="20" style="left:31%;top:2%">
+    <div class="sticker pencil" data-cursor="drag">
+      <svg viewBox="0 0 40 300"><rect x="10" y="0" width="20" height="270" rx="4" fill="#4A3326"/><path d="M10 270 H30 L20 300 Z" fill="#2B1D15"/></svg>
+    </div>
+  </div>
+  <div class="par sticker-wrap" data-depth="30" style="right:6%;top:3%">
+    <div class="sticker cup" data-cursor="drag">
+      <svg viewBox="0 0 220 220"><g transform="rotate(32 110 110)"><path d="M46 50 H174 L162 182 Q160 198 142 198 H78 Q60 198 58 182 Z" fill="#FFFFFF"/><path d="M168 84 Q212 86 204 130 Q196 168 156 164" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/><ellipse cx="110" cy="50" rx="64" ry="16" fill="#FFFFFF"/><ellipse cx="110" cy="52" rx="54" ry="11" fill="#9A948D"/><path d="M60 120 Q110 132 162 120" stroke="#E6E1DA" stroke-width="5" fill="none"/></g></svg>
+    </div>
+  </div>
+  <div class="par sticker-wrap" data-depth="22" style="right:5%;top:44%">
+    <div class="sticker note" data-cursor="drag">
+      <i class="tape"></i>
+      <p data-i18n-html="hero.note">物料设计 /<br>编排设计 /<br>展览 /<br>3D /<br>……</p>
+    </div>
+  </div>
+  <div class="par sticker-wrap" data-depth="34" style="left:62%;top:24%">
+    <div class="sticker sun" data-cursor="drag"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#EED98C"/></svg></div>
+  </div>
+  <div class="par sticker-wrap bits" data-depth="40" style="left:18%;top:63%"><i class="bit"></i><i class="bit"></i><i class="bit"></i><i class="bit"></i></div>
+
+  <div class="hero-name par" data-depth="8">
+    <span class="tag tag-ink tag-xl" data-i18n="hero.name1">柯婧然</span>
+    <span class="tag tag-white tag-blue tag-lg" data-i18n="hero.name2">@Jingran Ke</span>
+    <div class="hero-name-row">
+      <span class="tag tag-white tag-blue tag-stack">Graphic<br>Design</span>
+      <span class="hero-works" data-i18n="hero.works">作品集</span>
+    </div>
+  </div>
+
+  <div class="hero-years par" data-depth="12">(2021<span class="hero-slash"></span>2026)</div>
+
+  <p class="hero-hint"><span class="hint-arrow">↖</span> <span data-i18n="hero.hint">桌上的小东西都能拖动</span></p>
+  <a href="#about" class="hero-scroll" data-cursor="link"><span data-i18n="hero.scroll">向下滚动</span><i></i></a>
+</section>
+
+<!-- ============ 关键词跑马灯 ============ -->
+<div class="marquee" aria-hidden="true"><div class="marquee-track"></div></div>
+
+<!-- ============ 关于 ============ -->
+<section class="about" id="about">
+  <div class="about-head">
+    <span class="sq"></span><span class="about-eyebrow">INTRODUCTION</span>
+    <h2 class="sr-only" data-i18n="about.title">关于我</h2>
+  </div>
+
+  <p class="about-statement" data-i18n="about.statement"></p>
+
+  <div class="about-grid">
+    <div class="about-col">
+      <h3 class="tag tag-ink" data-i18n="about.edu">教育背景</h3>
+      <dl class="edu">
+        <div><dt>2020–2024</dt><dd><b data-i18n="about.edu1.t">上海视觉艺术学院</b><span data-i18n="about.edu1.d"></span></dd></div>
+        <div><dt>2024–2026</dt><dd><b data-i18n="about.edu2.t">伦敦艺术大学</b><span data-i18n="about.edu2.d"></span></dd></div>
+      </dl>
+
+      <h3 class="tag tag-ink" data-i18n="about.contact">联系方式</h3>
+      <dl class="contact-mini">
+        <div><dt data-i18n="about.wechat">微信</dt><dd class="js-wechat"></dd></div>
+        <div><dt data-i18n="about.xiaohongshu">小红书</dt><dd class="js-xiaohongshu"></dd></div>
+        <div><dt data-i18n="about.email">邮箱</dt><dd><a class="js-email" data-cursor="link" href="#"></a></dd></div>
+      </dl>
+    </div>
+
+    <div class="about-col">
+      <h3 class="tag tag-ink" data-i18n="about.skills">专业技能</h3>
+      <ul class="tools"></ul>
+      <dl class="kv">
+        <div><dt data-i18n="about.general">通用技能</dt><dd data-i18n="about.general.v"></dd></div>
+        <div><dt data-i18n="about.lang">语言技能</dt><dd data-i18n="about.lang.v"></dd></div>
+      </dl>
+
+      <h3 class="tag tag-ink" data-i18n="about.exp">项目经历</h3>
+      <ul class="exp">
+        <li><span class="yr">2022</span><div><b data-i18n="about.exp1.t"></b><p data-i18n="about.exp1.d"></p></div></li>
+        <li><span class="yr">2020–22</span><div><b data-i18n="about.exp2.t"></b><p data-i18n="about.exp2.d"></p></div></li>
+      </ul>
+    </div>
+
+    <div class="about-col about-col--right">
+      <div class="me">
+        <svg class="plus-grid me-plus" aria-hidden="true"><rect width="100%" height="100%" fill="url(#plus)"/></svg>
+        <div class="me-photo" data-cursor="link"><img data-img="i5-portrait.jpg" width="1691" height="2537" alt="柯婧然 Jingran Ke" loading="lazy"></div>
+        <span class="me-tag">It's me!</span>
+      </div>
+      <h3 class="tag tag-ink" data-i18n="about.awards">个人奖项</h3>
+      <ul class="awards"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Part 01 分隔页：剪刀沿虚线剪开 ============ -->
+<section class="divider divider--1">
+  <div class="divider-stage">
+    <div class="hero-panel"></div>
+    <div class="hero-word">Portfolio</div>
+    <div class="gingham divider-gingham"></div>
+    <svg class="blob divider-blob" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><path fill="#7B5B45"/></svg>
+    <div class="sticker-wrap chapter-object chapter-object--clip" aria-hidden="true">
+      <div class="sticker clip" data-cursor="drag">
+        <svg viewBox="0 0 200 170"><path d="M62 78 L44 12 H92 L84 78" fill="none" stroke="#E6CF7E" stroke-width="10" stroke-linejoin="round"/><path d="M138 78 L156 12 H108 L116 78" fill="none" stroke="#E6CF7E" stroke-width="10" stroke-linejoin="round"/><path d="M18 74 H182 L170 160 H30 Z" fill="#EED98C"/><path d="M18 74 H182 L180 92 H20 Z" fill="#D9C273"/></svg>
+      </div>
+    </div>
+    <div class="sticker-wrap chapter-object chapter-object--pencil" aria-hidden="true">
+      <div class="sticker pencil" data-cursor="drag">
+        <svg viewBox="0 0 40 300"><rect x="10" y="0" width="20" height="270" rx="4" fill="#4A3326"/><path d="M10 270 H30 L20 300 Z" fill="#2B1D15"/></svg>
+      </div>
+    </div>
+    <div class="sticker-wrap chapter-object chapter-object--cup" aria-hidden="true">
+      <div class="sticker cup" data-cursor="drag">
+        <svg viewBox="0 0 220 220"><g transform="rotate(32 110 110)"><path d="M46 50 H174 L162 182 Q160 198 142 198 H78 Q60 198 58 182 Z" fill="#FFFFFF"/><path d="M168 84 Q212 86 204 130 Q196 168 156 164" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/><ellipse cx="110" cy="50" rx="64" ry="16" fill="#FFFFFF"/><ellipse cx="110" cy="52" rx="54" ry="11" fill="#9A948D"/><path d="M60 120 Q110 132 162 120" stroke="#E6E1DA" stroke-width="5" fill="none"/></g></svg>
+      </div>
+    </div>
+    <svg class="dash-path" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path d="M-20 520 C 160 600, 300 330, 470 360 S 760 560, 830 260 S 900 40, 1020 -20" fill="none"/></svg>
+    <div class="traveler scissors">
+      <svg viewBox="0 0 240 230">
+        <g class="half half-a"><path d="M120 112 L208 16 L218 28 L128 124 Z" fill="#EED98C"/><path d="M120 112 L82 162" stroke="#EED98C" stroke-width="16" stroke-linecap="round"/><circle cx="72" cy="188" r="28" fill="none" stroke="#EED98C" stroke-width="16"/></g>
+        <g class="half half-b"><path d="M120 112 L32 16 L22 28 L112 124 Z" fill="#E6CF7E"/><path d="M120 112 L158 162" stroke="#E6CF7E" stroke-width="16" stroke-linecap="round"/><circle cx="168" cy="188" r="28" fill="none" stroke="#E6CF7E" stroke-width="16"/></g>
+        <circle cx="120" cy="114" r="7" fill="#3A2A20"/>
+      </svg>
+    </div>
+    <div class="divider-title">
+      <span class="tag tag-ink tag-xl" data-i18n="part1.big">项目</span>
+      <span class="tag tag-white tag-blue tag-lg" data-i18n="part1.small">Project</span>
+      <span class="divider-part">Part 01</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 项目：横向滚动 ============ -->
+<section class="work" id="projects" aria-labelledby="projects-title">
+  <h2 class="sr-only" id="projects-title" data-i18n="part1.big">项目</h2>
+  <div class="work-pin">
+    <div class="work-top">
+      <span class="work-count"><b class="js-cur">01</b> / 08</span>
+      <span class="work-hint" data-i18n="projects.hint">继续滚动，横向浏览</span>
+    </div>
+    <div class="track"></div>
+    <div class="work-progress"><span></span></div>
+  </div>
+</section>
+
+<!-- ============ Part 02 分隔页：鼠标沿虚线拖线 ============ -->
+<section class="divider divider--2">
+  <div class="divider-stage">
+    <div class="hero-panel"></div>
+    <div class="hero-word">Portfolio</div>
+    <div class="gingham divider-gingham divider-gingham--b"></div>
+    <svg class="blob divider-blob divider-blob--b" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><path fill="#7B5B45"/></svg>
+    <div class="sticker-wrap chapter-object chapter-object--clip" aria-hidden="true">
+      <div class="sticker clip" data-cursor="drag">
+        <svg viewBox="0 0 200 170"><path d="M62 78 L44 12 H92 L84 78" fill="none" stroke="#E6CF7E" stroke-width="10" stroke-linejoin="round"/><path d="M138 78 L156 12 H108 L116 78" fill="none" stroke="#E6CF7E" stroke-width="10" stroke-linejoin="round"/><path d="M18 74 H182 L170 160 H30 Z" fill="#EED98C"/><path d="M18 74 H182 L180 92 H20 Z" fill="#D9C273"/></svg>
+      </div>
+    </div>
+    <div class="sticker-wrap chapter-object chapter-object--pencil" aria-hidden="true">
+      <div class="sticker pencil" data-cursor="drag">
+        <svg viewBox="0 0 40 300"><rect x="10" y="0" width="20" height="270" rx="4" fill="#4A3326"/><path d="M10 270 H30 L20 300 Z" fill="#2B1D15"/></svg>
+      </div>
+    </div>
+    <div class="sticker-wrap chapter-object chapter-object--cup" aria-hidden="true">
+      <div class="sticker cup" data-cursor="drag">
+        <svg viewBox="0 0 220 220"><g transform="rotate(32 110 110)"><path d="M46 50 H174 L162 182 Q160 198 142 198 H78 Q60 198 58 182 Z" fill="#FFFFFF"/><path d="M168 84 Q212 86 204 130 Q196 168 156 164" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/><ellipse cx="110" cy="50" rx="64" ry="16" fill="#FFFFFF"/><ellipse cx="110" cy="52" rx="54" ry="11" fill="#9A948D"/><path d="M60 120 Q110 132 162 120" stroke="#E6E1DA" stroke-width="5" fill="none"/></g></svg>
+      </div>
+    </div>
+    <svg class="dash-path" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true"><path d="M120 460 C160 460 230 100 340 100 C450 100 500 500 650 500 C760 500 810 110 880 110" fill="none"/></svg>
+    <div class="traveler mouse">
+      <svg viewBox="0 0 140 190"><path d="M70 18 C106 16 129 52 128 101 C127 150 105 184 69 182 C34 181 10 149 12 100 C13 52 34 20 70 18 Z" fill="#EED98C" stroke="#3A2A20" stroke-width="5" stroke-linejoin="round"/><path d="M70 20 V92" stroke="#3A2A20" stroke-width="6"/><rect x="62" y="40" width="16" height="26" rx="8" fill="#3A2A20"/></svg>
+    </div>
+    <div class="divider-title">
+      <span class="tag tag-ink tag-xl" data-i18n="part2.big">出版设计</span>
+      <span class="tag tag-white tag-blue tag-lg" data-i18n="part2.small">Publication Design</span>
+      <span class="divider-part">Part 02</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 出版设计：与 Part 01 共用横向索引 ============ -->
+<section class="work pubs" id="publication" aria-labelledby="publication-title">
+  <h2 class="sr-only" id="publication-title" data-i18n="pubs.title">出版设计</h2>
+  <div class="work-pin">
+    <div class="work-top">
+      <span class="work-count"><b class="js-cur">01</b> / 07</span>
+      <span class="work-hint" data-i18n="projects.hint">继续滚动，横向浏览</span>
+    </div>
+    <div class="track"></div>
+    <div class="work-progress"><span></span></div>
+  </div>
+</section>
+
+<!-- ============ 结尾 / 联系 ============ -->
+<section class="contact" id="contact">
+  <div class="hero-panel"></div>
+  <div class="hero-word">Portfolio</div>
+  <div class="gingham contact-gingham"></div>
+  <svg class="blob contact-blob" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><path fill="#7B5B45"/></svg>
+  <svg class="plus-grid contact-plus" aria-hidden="true"><rect width="100%" height="100%" fill="url(#plus)"/></svg>
+
+  <div class="contact-title">
+    <span class="tag tag-ink tag-xl" data-i18n="contact.big">感谢阅读</span>
+    <span class="tag tag-white tag-blue tag-lg" data-i18n="contact.small">Thank you</span>
+    <p class="contact-line" data-i18n="contact.line"></p>
+  </div>
+
+  <div class="contact-card">
+    <i class="tape"></i>
+    <dl>
+      <div><dt data-i18n="about.wechat">微信</dt><dd class="js-wechat"></dd></div>
+        <div><dt data-i18n="about.xiaohongshu">小红书</dt><dd class="js-xiaohongshu"></dd></div>
+      <div><dt data-i18n="about.email">邮箱</dt><dd><button class="copy-email js-copy" type="button" data-cursor="link"><span class="js-email-text"></span><small data-i18n="contact.copy">点击复制</small></button></dd></div>
+    </dl>
+    <a class="btn-pdf js-pdf" data-cursor="link" target="_blank" rel="noopener"><span data-i18n="contact.pdf">下载 PDF 作品集</span> ↓</a>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 柯婧然 Jingran Ke</span>
+    <a href="#top" data-cursor="link" data-i18n="footer.top">回到顶部</a>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============ 项目详情（全屏层） ============ -->
+<div class="case" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="case-scroll" data-lenis-prevent>
+    <button class="case-close" type="button" data-cursor="link"><span data-i18n="case.close">关闭</span> ✕</button>
+    <div class="case-body"></div>
+  </div>
+</div>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="gsap.min.js"></script>
+<script src="ScrollTrigger.min.js"></script>
+<script src="lenis.min.js"></script>
+<script src="data.js?v=20261020-5"></script>
+<script src="main.js?v=20261020-5"></script>
+</body>
+</html>
